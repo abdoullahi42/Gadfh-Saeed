@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+ {
+  /* https://goodpalette.io/3f39ed-d2d911-a9a9b8
+https://goodpalette.io/faa441-8e2fe0-b8b3ae
+#3F39ED
+#F6F2FF
+#D1C5FF
+#A696FD */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+input {
+  outline: none;
+  border: none;
+}
