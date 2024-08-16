@@ -25,10 +25,10 @@ function Service() {
     <section>
       <div>
         <div className="mb-16 w-11/12 mx-auto lg:px-24 lg:mb-14">
-          <h3 className="text-[25px] lg:text-4xl font-semibold text-center mb-7">
+          <h3 className="text-3xl md:text-4xl lg:text-[40px] font-semibold text-center mb-7">
             Our Services
           </h3>
-          <p className="text-center  leading-[1.6] text-[18px] ">
+          <p className="text-center  leading-[1.6] text-[18px] md:text-xl ">
             We offer a comprehensive range of services in the import and export
             of general goods. Our expertise includes sourcing, logistics, and
             customs clearance
@@ -38,14 +38,14 @@ function Service() {
           {services.map((serv) => (
             <div
               key={serv.header}
-              className="grid  gap-3 lg:w-[88%] bg-white mb-10 pb-6 "
+              className="grid  gap-3 lg:w-11/12 bg-white mb-10 pb-6 "
             >
               <div>
                 <img src={serv.images} className="lg:w-full" />
               </div>
               <div className="px-4">
-                <h3 className="text-[20px] lg:text-2xl mb-4">{serv.header}</h3>
-                <p className="leading-[1.6]">{serv.text}</p>
+                <h3 className="text-[24px] mb-4 font-medium">{serv.header}</h3>
+                <p className="leading-[1.5] md:text-[18px]">{serv.text}</p>
               </div>
             </div>
           ))}

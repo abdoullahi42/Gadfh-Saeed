@@ -22,9 +22,9 @@ const stepsData = [
 
 function HowItWorks() {
   return (
-    <section className=" py-5 mb-24">
+    <section className=" py-5 mb-12 md:mb-16 lg:mb-24">
       <div className="">
-        <div className="w-11/12 mx-auto mb-7">
+        <div className="w-11/12 mx-auto mb-10">
           <h3 className="text-[28px] md:text-3xl lg:text-4xl font-semibold ">
             From inquiry to Delivery, we handle it all
           </h3>
@@ -32,13 +32,13 @@ function HowItWorks() {
         {stepsData.map((steps, index) => (
           <div
             key={steps.header}
-            className="grid grid-cols-1 lg:grid-cols-2 w-11/12 mx-auto gap-10 lg:items-center lg:gap-28 mb-20 lg:mb-11  "
+            className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto gap-10 lg:items-center md:gap-28 mb-20 md:mb-12 lg:mb-11  "
           >
-            <div className={`${index % 2 === 0 && "lg:order-2"}  lg:w-10/12  `}>
+            <div className={`${index % 2 === 0 && "md:order-2"}  md:w-10/12  `}>
               <img src={steps.images} alt={steps.images} className="" />
             </div>
-            <div className={`${index % 2 === 0 && "lg:order-1"}`}>
-              <h3 className="text-[1px] lg:text-4xl mb-6 font-medium">
+            <div className={`${index % 2 === 0 && "md:order-1"}`}>
+              <h3 className="text-[25px] lg:text-4xl mb-6 font-medium">
                 {steps.header}
               </h3>
               <p className="leading-[1.6] text-[18px]">{steps.text}</p>

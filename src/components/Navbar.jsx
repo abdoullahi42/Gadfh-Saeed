@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaBars, FaTimes, FaSeedling } from "react-icons/fa";
+import { FaBars, FaSeedling } from "react-icons/fa";
+import { FaXmark } from "react-icons/fa6";
 function Navbar() {
   const [isopen, setIsopen] = useState(false);
   let Links = [
@@ -10,24 +11,24 @@ function Navbar() {
   ];
   return (
     <nav className="bg-[#fdf2e9]">
-      <div className="flex justify-between  lg:gap-0 lg:justify-start  px-4 lg:pl-4 lg:pr-24  py-10 lg:pb-0 lg:pt-5 items-center ">
+      <div className="flex justify-between  lg:gap-0 lg:justify-start  px-4 lg:pl-4 lg:pr-24  py-10 lg:pb-0 lg:pt-5 items-center   ">
         <div className="flex gap-1 lg:gap-2 justify-center items-center lg:justify-start  pl-2  lg:w-1/2 ">
           <span>
             <FaSeedling color="#0C4607" size={25} />
           </span>
-          <span className="lg:text-[18px] font-semibold ">GADFH & Saeed</span>
+          <span className="lg:text-[18px] font-semibold ">G-DAFH & SAEED</span>
         </div>
         <div
           className={`${
             isopen
-              ? "fixed inset-0 bg-white h-[100vh] flex flex-col w-[90vw]  py-24 pt-5"
+              ? "fixed inset-0 bg-white h-[100vh] flex flex-col w-[90vw]  py-24 pt-5 "
               : "hidden"
-          }  lg:flex  gap-8 lg:gap-20 lg:py-2     `}
+          }  lg:flex  gap-8 lg:gap-20 lg:py-2 transition-all duration-500 ease-in-out   `}
         >
-          <ul className="flex flex-col mt-11 lg:flex-row lg:m-0 mx-auto gap-6 text-[18px] font-medium  lg:gap-8 xl:gap-10  text-[#333] items-center">
+          <ul className="flex flex-col mt-11 lg:flex-row lg:m-0 mx-auto gap-6 text-[18px] font-medium lg:text-xl  lg:gap-8 xl:gap-10  text-[#333] items-center">
             {Links.map((link) => (
               <li key={link.name} className="">
-                <a href={link.link}>{link.name}</a>
+                <a href={`#${link.name}`}>{link.name}</a>
               </li>
             ))}
           </ul>
@@ -39,7 +40,7 @@ function Navbar() {
         </div>
         <div onClick={() => setIsopen(!isopen)} className="">
           {isopen ? (
-            <FaTimes
+            <FaXmark
               size={32}
               color=""
               className="lg:hidden absolute top-0 right-[8%]"
