@@ -1,25 +1,21 @@
-import Faqs from "./components/Fas";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import HowItWorks from "./components/HowItWorks";
 import Navbar from "./components/Navbar";
-import Service from "./components/service";
-
-import Whyus from "./components/Whyus";
+import Homepage from "./pages/Homepage";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <section>
-      <div>
-        <Navbar />
-        <Hero />
-        <HowItWorks />
-        <Service />
-        <Whyus />
-        <Faqs />
-        <Footer />
-      </div>
-    </section>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route index={Homepage} element={<Homepage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

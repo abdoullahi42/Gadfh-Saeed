@@ -27,7 +27,7 @@ const questions = [
     id: 1297,
     question: "How long does it take to deliver goods",
     answer:
-      "Delivery times vary depending on the destination and product type. However, we aim to complete the process within short period of time",
+      "Delivery times vary depending on the destination and product type. However, we aim to complete the process within short period of time usually 3 to 4 weeks",
   },
   {
     id: 9103,

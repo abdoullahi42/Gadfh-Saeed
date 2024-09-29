@@ -22,7 +22,7 @@ const stepsData = [
 
 function HowItWorks() {
   return (
-    <section className=" py-5 mb-12 md:mb-16 lg:mb-24">
+    <section className=" py-5 mb-12 md:mb-16 lg:mb-24 ">
       <div className="">
         <div className="w-11/12 mx-auto mb-10">
           <h3 className="text-[28px] md:text-3xl lg:text-4xl font-semibold ">

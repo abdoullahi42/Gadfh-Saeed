@@ -15,7 +15,7 @@ function Hero() {
             Service across the globe
           </p>
           <div className="">
-            <button className="bg-[#cf711f] text-white py-4 px-8 rounded-[18px] text-[18px]">
+            <button className="bg-[#cf711f] text-white py-4 px-6 rounded-[48px] text-[18px]">
               Get In touch
             </button>
           </div>
